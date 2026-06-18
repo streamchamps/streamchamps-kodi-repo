@@ -1,0 +1,37 @@
+<addons>
+<addon id="repository.streamchamps" name="StreamChamps Repository" version="1.0.3" provider-name="StreamChamps">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="StreamChamps Repository">
+    <info compressed="false">https://streamchamps.github.io/streamchamps-kodi-repo/addons.xml</info>
+    <checksum>https://streamchamps.github.io/streamchamps-kodi-repo/addons.xml.md5</checksum>
+    <datadir zip="true">https://streamchamps.github.io/streamchamps-kodi-repo/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_US">Official StreamChamps Kodi repository.</summary>
+    <description lang="en_US">Repository for StreamChamps Sports Hub Kodi add-ons.</description>
+    <platform>all</platform>
+    <assets><icon>resources/media/icon.png</icon></assets>
+  </extension>
+</addon>
+<addon id="plugin.video.streamchamps.news" name="StreamChamps Sports Hub" version="3.0.0" provider-name="StreamChamps">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_US">NFL, NBA, NHL and Soccer sports hub powered by StreamChamps.</summary>
+    <description lang="en_US">StreamChamps Sports Hub pulls public sports news, story summaries, video news searches, schedules, standings links, and player stats links for NFL, NBA, NHL and Soccer. Built for Kodi 21 Omega.</description>
+    <disclaimer lang="en_US">Unofficial fan add-on. No live streams are provided. News summaries and links come from public feeds/APIs.</disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+</addons>
